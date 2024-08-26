@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'transaction_model_class.dart';
 
 class TransactionList {
@@ -14,7 +12,7 @@ class TransactionList {
   }
 
   void viewTransaction() {
-    if (transactions.isNotEmpty) {
+    if (transactions.isEmpty) {
       print('List is empty');
     } else {
       print("Transaction: ");
